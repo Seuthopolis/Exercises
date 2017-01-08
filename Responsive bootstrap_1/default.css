@@ -3,7 +3,6 @@ html, body {
 }
 
 body {
-    text-rendering: optimizelegibility;
     color: #6c6f73;
     overflow: hidden;
 }
