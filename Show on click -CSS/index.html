@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Show on click (CSS)</title>
+    <style>
+        div {
+            display: inline-block;
+            width: 25vw;
+            height: 20vw;
+            background-color: #222;
+            cursor: pointer;
+            transition: all 0.2s linear;
+        }
+
+        div:nth-child(1):focus {
+            outline: none;
+            background: url("https://images.unsplash.com/photo-1483192774231-19b97c99b6d3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=c3bc2785a5bfe3306d612ac3257b8401");
+            background-size: 25vw 20vw;
+        }
+
+        div:nth-child(2):focus {
+            outline: none;
+            background: url("https://images.unsplash.com/photo-1481316536253-76d9c0914846?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=3d1ad488dd8cc525eb7ad94cde87f784");
+            background-size: 25vw 20vw;
+        }
+
+        div:nth-child(3):focus {
+            outline: none;
+            background: url("https://images.unsplash.com/photo-1483192774231-19b97c99b6d3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=c3bc2785a5bfe3306d612ac3257b8401");
+            background-size: 25vw 20vw;
+        }
+    </style>
+</head>
+<body>
+<div tabindex="1"></div>
+<div tabindex="2"></div>
+<div tabindex="3"></div>
+</body>
+</html>
