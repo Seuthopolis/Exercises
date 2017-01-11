@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #cfc;
+        }
+
+        #hidden_text {
+            display: none;
+        }
+
+        #text {
+            padding: 1vw;
+            color: navy;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 1.2rem;
+        }
+
+        #text:after {
+            content: "\258C";
+            animation: blink 600ms linear infinite alternate;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="text_container">
+    <pre><code id="hidden_text">    (function immediateInvoke() {
+        let wording = document.getElementById('hidden_text').innerHTML,
+            counter = 0,
+            typewriter = document.getElementById('text'),
+            startCount = setInterval(typing, 200);
+
+        function typing() {
+            let stringSplit = wording.substr(0, counter);
+            typewriter.innerHTML = stringSplit;
+            counter++;
+            if (counter > wording.length) {
+                clearInterval(startCount);
+            }
+        }
+
+    }());</code></pre>
+    <pre id="text"></pre>
+</div>
+<script>
+    (function immediateInvoke() {
+        let wording = document.getElementById('hidden_text').innerHTML,
+            counter = 0,
+            typewriter = document.getElementById('text'),
+            startCount = setInterval(typing, 200);
+
+        function typing() {
+            let stringSplit = wording.substr(0, counter);
+            typewriter.innerHTML = stringSplit;
+            counter++;
+            if (counter > wording.length) {
+                clearInterval(startCount);
+            }
+        }
+
+    }());
+</script>
+</body>
+</html>
