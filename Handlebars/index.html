@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Handlebars Task</title>
+    <link rel="stylesheet" href="assets/styles/minireset.min.css">
+    <link rel="stylesheet" href="assets/styles/default.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Backlog</a></li>
+                <li><a href="#" class="active">Tasks</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Log</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="lists">
+            <h3>Lists</h3>
+            <ul>
+                <li><a href="#">&#128463; My Tasks <span class="dark-to-do">12</span></a></li>
+                <li><a href="#">&#9745; Check List <span class="dark-to-do">6</span></a></li>
+                <li><a href="#">&#128065; Watching <span class="light-to-do">1</span></a></li>
+                <li><a href="#">&#50883; Team Tasks <span class="light-to-do">14</span></a></li>
+            </ul>
+        </section>
+        <section id="task-boards">
+            <h3>Tasks Board</h3>
+            <div id="box-container"></div>
+        </section>
+    </main>
+</div>
+<script id="json-data" type="text/x-handlebars-template">
+    <div class="col waiting">
+        <section class="col-content">
+            <header><h2>&#10710; WAITING</h2><div class="info-count"></div></header>
+            {{#waiting}}
+            {{#description}}
+            <div class="ready">{{this}} {{{../photo}}}</div>
+            {{/description}}
+            {{#unready}}
+            <div class="not-ready">{{this}} {{{../photo}}}</div>
+            {{/unready}}
+            {{/waiting}}
+        </section>
+    </div>
+    <div class="col in-progress">
+        <section class="col-content">
+            <header><h2>&#9881; IN PROGRESS</h2><div class="info-count"></div></header>
+            {{#progress}}
+            <div class="ready">{{description}} {{{photo}}}</div>
+            {{/progress}}
+        </section>
+    </div>
+    <div class="col review">
+        <section class="col-content">
+            <header><h2>&#10003; REVIEW/CONFIRM</h2><div class="info-count"></div></header>
+            {{#review}}
+            {{#description}}
+            <div class="ready">{{this}} {{{../photo}}}</div>
+            {{/description}}
+            {{#reject}}
+            <div class="strike-out">{{this}} {{{../photo}}}</div>
+            {{/reject}}
+            {{/review}}
+        </section>
+    </div>
+</script>
+<script src="assets/scripts/jquery-3.1.1.min.js"></script>
+<script src="assets/scripts/handlebars-v4.0.5.js"></script>
+<script src="assets/scripts/script.js"></script>
+</body>
+</html>
