@@ -1,0 +1,162 @@
+{
+  "waiting": [
+
+    {
+      "description": "Unable to load game request session",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "description": "Fullscreen btn doesn't spread to full",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "description": "Reels can be tampered with before",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "description": "Big Win and Bangup not positioned",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "description": "Winlines are misaligned (all)",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "description": "Spin swap tile misalignment",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "description": "Hidden Dragon Revisions",
+      "photo": "<img src ='assets/images/face-2.png'>"
+    },
+    {
+      "description": "Swap tile се пада два пъти",
+      "photo": "<img src ='assets/images/face-3.png'>"
+    },
+    {
+      "description": "Може да се разместят рийлове",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "description": "Fullscreen doesn't spread reels",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "description": "Символите примигват при драгван",
+      "photo": "<img src ='assets/images/face-4.png'>"
+    },
+    {
+      "description": "Game not scaled for iPhone",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "unready": "Debug pause button doesn't unpause",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "unready": "[Config reels on] doesn't show",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "unready": "Nundge up/down misalignment (all)",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "unready": "Locked tile shadow",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    }
+
+  ],
+  "progress": [
+
+    {
+      "description": "Support multiple Reels Definition",
+      "photo": "<img src ='assets/images/face-4.png'>"
+    },
+    {
+      "description": "Autoplay disables bottombar",
+      "photo": "<img src ='assets/images/face-8.png'>"
+    },
+    {
+      "description": "Да се направят unit test-ове на",
+      "photo": "<img src ='assets/images/face-3.png'>"
+    },
+    {
+      "description": "Symbols design",
+      "photo": "<img src ='assets/images/face-5.png'>"
+    },
+    {
+      "description": "Symbols design",
+      "photo": "<img src ='assets/images/face-2.png'>"
+    },
+    {
+      "description": "Letter Symbols design",
+      "photo": "<img src ='assets/images/face-2.png'>"
+    }
+
+  ],
+  "review": [
+
+    {
+      "description": "Use reel position from backend",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "description": "Stop reels at correct positon",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "description": "Config reels debug",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "description": "Popup tile should remove itself",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "description": "Draw win lines dynamically",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "reject": "Spin sound does not play (Opera)",
+      "photo": "<img src ='assets/images/face-6.png'>"
+    },
+    {
+      "reject": "Bangup sound does not play (Opera)",
+      "photo": "<img src ='assets/images/face-6.png'>"
+    },
+    {
+      "reject": "Spin stop sound does not play (Opera) ",
+      "photo": "<img src ='assets/images/face-6.png'>"
+    },
+    {
+      "reject": "Special tile animation not triggered",
+      "photo": "<img src ='assets/images/face-6.png'>"
+    },
+    {
+      "reject": "Unable to get with property of reeling",
+      "photo": "<img src ='assets/images/face-6.png'>"
+    },
+    {
+      "description": "When dragging and space key is perform",
+      "photo": "<img src ='assets/images/face-1.png'>"
+    },
+    {
+      "description": "Slot scene Background (Design)",
+      "photo": "<img src ='assets/images/face-2.png'>"
+    },
+    {
+      "description": "Width property error in console (Chrome)",
+      "photo": "<img src ='assets/images/face-6.png'>"
+    },
+    {
+      "description": "Feature locked tiles",
+      "photo": "<img src ='assets/images/face-8.png'>"
+    },
+    {
+      "description": "Code review #API",
+      "photo": "<img src ='assets/images/face-7.png'>"
+    }
+
+  ]
+}
