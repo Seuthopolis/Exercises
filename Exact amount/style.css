@@ -1,0 +1,31 @@
+table {
+    width: 60vw;
+    margin: 10vw auto;
+}
+td:first-of-type {
+    width: 80%;
+}
+td:last-of-type {
+    width: 20%;
+}
+table, th, tr, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th {
+    background: rgb(217, 217, 217);
+}
+td p {
+    padding: 0 1vw;
+}
+#input-text {
+    width: 98%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#btn{
+    cursor: pointer;
+}
