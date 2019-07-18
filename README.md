@@ -1,1 +1,1 @@
-This folder is for training purposes
+This folder is for training purposes only.
