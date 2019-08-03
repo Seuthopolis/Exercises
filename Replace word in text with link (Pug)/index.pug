@@ -1,0 +1,38 @@
+doctype html
+head
+    meta(charset='utf-8')
+    title Task 3
+body
+    h1 Task 3
+
+    //- Templates
+
+        Please create 2 paragraphs from the texts at the bottom. Every occurance in this text of the following words/letters shall become a link to the destination defined below:
+
+            sed -> https://google.com
+            liq -> https://facebook.com
+
+        There are 2 ways to add links inside a text node, please use both at least once and explain why one is better than the other in this case.
+
+
+        Paragraph1:
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar elementum integer enim neque volutpat ac. Facilisis sed odio morbi quis commodo odio aenean sed. Vel facilisis volutpat est velit. Viverra aliquet eget sit amet tellus cras adipiscing enim. Ultricies mi quis hendrerit dolor magna eget est lorem. Fames ac turpis egestas maecenas pharetra convallis. Laoreet non curabitur gravida arcu ac tortor dignissim convallis. Sapien et ligula ullamcorper malesuada proin libero nunc. Mattis nunc sed blandit libero volutpat sed cras ornare. Faucibus et molestie ac feugiat sed. Libero volutpat sed cras ornare. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Placerat vestibulum lectus mauris ultrices. Tortor dignissim convallis aenean et tortor at risus viverra. Ut aliquam purus sit amet luctus venenatis lectus. Tortor dignissim convallis aenean et tortor at. Cursus eget nunc scelerisque viverra mauris in.
+
+        Paragraph2:
+        Viverra mauris in aliquam sem fringilla ut morbi tincidunt. Condimentum mattis pellentesque id nibh. Elementum tempus egestas sed sed risus pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Mauris vitae ultricies leo integer. Laoreet sit amet cursus sit amet dictum sit. Quis blandit turpis cursus in hac habitasse. Accumsan tortor posuere ac ut. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Semper eget duis at tellus at. Tristique sollicitudin nibh sit amet commodo nulla. Neque gravida in fermentum et. Pretium viverra suspendisse potenti nullam ac tortor. In mollis nunc sed id semper risus.
+        *************************************
+
+        Frist way is to use Unescaped String Interpolation but it can be very risky if that content comes from users. In this case this is better because we have no user input.
+    - var str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar elementum integer enim neque volutpat ac. Facilisis sed odio morbi quis commodo odio aenean sed. Vel facilisis volutpat est velit. Viverra aliquet eget sit amet tellus cras adipiscing enim. Ultricies mi quis hendrerit dolor magna eget est lorem. Fames ac turpis egestas maecenas pharetra convallis. Laoreet non curabitur gravida arcu ac tortor dignissim convallis. Sapien et ligula ullamcorper malesuada proin libero nunc. Mattis nunc sed blandit libero volutpat sed cras ornare. Faucibus et molestie ac feugiat sed. Libero volutpat sed cras ornare. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Placerat vestibulum lectus mauris ultrices. Tortor dignissim convallis aenean et tortor at risus viverra. Ut aliquam purus sit amet luctus venenatis lectus. Tortor dignissim convallis aenean et tortor at. Cursus eget nunc scelerisque viverra mauris in.";
+    - var url = '<a href="https://google.com">sed</a>';
+    - var url2 = '<a href="https://facebook.com">liq</a>';
+    - var res = str.replace(/sed/g, url).replace(/liq/g, url2);
+
+    p !{res}
+
+    // Second way is to use Escaped String Interpolation which is safer, but because if I use the previous method it returns anchor tag as strig. I need to do it manually.
+    p
+    | Viverra mauris in a#[a(href="https://facebook.com") liq]seduam sem fringilla ut morbi tincidunt. Condimentum mattis pellentesque id nibh. Elementum tempus egestas #[a(href="https://google.com") sed] #[a(href="https://google.com") sed] risus pretium. Pellentesque
+    | habitant morbi tristique senectus et netus et malesuada fames. Mauris vitae ultricies leo integer. Laoreet sit amet cursus sit amet dictum sit. Quis blandit turpis
+    | cursus in hac habitasse. Accumsan tortor posuere ac ut. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Semper eget duis at tellus at. Tristique
+    | sollicitudin nibh sit amet commodo nulla. Neque gravida in fermentum et. Pretium viverra suspendisse potenti nullam ac tortor. In mollis nunc #[a(href="https://google.com") sed] id semper risus.
