@@ -1,0 +1,27 @@
+[
+    {
+        "date": "May 2020",
+        "heading": "Front-end Developer",
+        "text": "Software University We're seeking a Front-End Developer to join our ongoing quest to create the most epic, innovative sales management solution around."
+    },
+    {
+        "date": "May 2020",
+        "heading": "Java Developer",
+        "text": "Deep knowledge and experience with Java 8+; Experience with Spring Framework; Database connectivity ( Hibernate); SQL skills; Experience with My SQL ( Maria DB) would be an advantage"
+    },
+    {
+        "date": "Apr 2020",
+        "heading": "JavaScript Developer",
+        "text": "We are looking for a hard core, creative developer with relevant education and at least 2 years of JavaScript experience and also understanding of of code versioning tools; knowledge of JavaScript libraries and frameworks such as AngularJS; advanced knowledge of browser rendering behavior and performance; experience with React and Redux."
+    },
+    {
+        "date": "Apr 2020",
+        "heading": "Junior PHP Developer",
+        "text": "Junior PHP Developer If you are an early-career developer with 1-2 years of PHP, JavaScript, SQL and any HTML/CSS, please read on. Based in Rochelle Park, NJ, we are the fastest growing, tech-focused industry leader focused on reducing transportation costs through automated audit and freight recovery, BI, and contract negotiation solutions."
+    },
+    {
+        "date": "Mar 2020",
+        "heading": "WordPress Developer",
+        "text": "WordPress Developer dash; Gunpowder, MD 21010 This position is primarily WordPress Development, with a minor SharePoint component. Design, develop, enhance, debug, and imp."
+    }
+]
